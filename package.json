@@ -1,10 +1,14 @@
 {
   "name": "esa-emoji-uploader",
   "version": "1.0.0",
-  "description": "\"CLI for Importing emoji to esa.io",
+  "description": "CLI for Importing emoji to esa.io",
   "main": "./lib/index.js",
   "bin": {
     "wataridori": "./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pittan/wataridori.git"
   },
   "scripts": {
     "start": "ts-node src/index.ts",
@@ -13,17 +17,24 @@
     "build": "tsc -p .",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
   },
-  "author": "",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pittan/wataridori/issues"
+  },
+  "keywords": [
+    "esa",
+    "emoji"
+  ],
+  "author": "Amon Keishima",
+  "license": "MIT",
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/node": "^12.7.8",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@types/dotenv": "^6.1.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "apng-js": "^1.1.0",
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
