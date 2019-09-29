@@ -1,0 +1,34 @@
+{
+  "name": "esa-emoji-uploader",
+  "version": "1.0.0",
+  "description": "\"CLI for Importing emoji to esa.io",
+  "main": "./lib/index.js",
+  "bin": {
+    "wataridori": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "create": "npm run build && npm run test",
+    "local-link": "npm run build && npm link && wataridori",
+    "build": "tsc -p .",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "apng-js": "^1.1.0",
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "dotenv": "^8.1.0",
+    "figlet": "^1.2.4",
+    "ora": "^4.0.1"
+  }
+}

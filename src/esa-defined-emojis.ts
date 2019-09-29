@@ -1,0 +1,20 @@
+export const ESA_DEFINED_EMOJIS = [
+  'bowtie',
+  'feelsgood',
+  'finnadie',
+  'fu',
+  'goberserk',
+  'godmode',
+  'hurtrealbad',
+  'metal',
+  'neckbeard',
+  'octocat',
+  'rage1',
+  'rage2',
+  'rage3',
+  'rage4',
+  'squirrel',
+  'suspect',
+  'trollface',
+]
+
