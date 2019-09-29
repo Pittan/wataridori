@@ -15,7 +15,9 @@
     "create": "npm run build && npm run test",
     "local-link": "npm run build && npm link && wataridori",
     "build": "tsc -p .",
-    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "pre-publish": "npm run refresh && npm run build",
+    "test": "echo test coming soon"
   },
   "bugs": {
     "url": "https://github.com/Pittan/wataridori/issues"
