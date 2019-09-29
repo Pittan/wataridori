@@ -17,7 +17,7 @@
     "build": "tsc -p .",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
     "pre-publish": "npm run refresh && npm run build",
-    "test": "echo test coming soon"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/Pittan/wataridori/issues"
@@ -31,17 +31,37 @@
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/node": "^12.7.8",
+    "jest": "^24.9.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
+    "@types/jest": "^24.0.18",
     "apng-js": "^1.1.0",
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
     "dotenv": "^8.1.0",
     "figlet": "^1.2.4",
-    "ora": "^4.0.1"
+    "ora": "^4.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "ts-jest": "^24.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.spec.json"
+      }
+    },
+    "testMatch": [
+      "**/*.spec.+(ts|js)"
+    ]
   }
 }
