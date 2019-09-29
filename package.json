@@ -1,5 +1,5 @@
 {
-  "name": "wataridori",
+  "name": "@pittankopta/wataridori",
   "version": "1.0.0",
   "description": "CLI for Importing emoji to esa.io",
   "main": "./lib/index.js",
