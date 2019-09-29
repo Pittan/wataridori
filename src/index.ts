@@ -12,7 +12,7 @@ dotenv.config()
 console.log(chalk.greenBright(figlet.textSync('wataridori')))
 
 program
-  .version('1.0.0')
+  .version('1.0.2')
   .arguments('<filename>')
   .description("CLI for Importing emoji to esa.io")
   .option('-a, --access-token <access-token>', 'esa access token (with write access)')
